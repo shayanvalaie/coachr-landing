@@ -49,6 +49,11 @@ export default function Pricing() {
         overflow: "hidden",
       }}
     >
+      <style>{`
+        @media (max-width: 600px) {
+          .pricing-card { padding: 24px 20px !important; }
+        }
+      `}</style>
       <div
         style={{
           position: "absolute",
@@ -112,7 +117,7 @@ export default function Pricing() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
             gap: 24,
             alignItems: "stretch",
           }}
@@ -234,6 +239,7 @@ function PricingCard({
 
   return (
     <div
+      className="pricing-card"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{

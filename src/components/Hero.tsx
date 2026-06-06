@@ -28,28 +28,33 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{
-        maxWidth: 1100,
-        margin: '0 auto',
-        width: '100%',
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: 60,
-        alignItems: 'center',
-      }}>
-        <style>{`
+      <style>{`
           @media (max-width: 900px) {
-            .hero-grid { grid-template-columns: 1fr !important; text-align: center; }
+            .hero-grid { grid-template-columns: 1fr !important; text-align: center; gap: 0 !important; }
             .hero-phone { display: none !important; }
             .hero-badges { justify-content: center !important; }
             .hero-store-btns { justify-content: center !important; }
             .hero-stat-row { justify-content: center !important; }
+            .hero-desc { max-width: 100% !important; }
+          }
+          @media (max-width: 768px) {
+            #hero { padding: 80px 20px 60px !important; }
           }
           .store-btn:hover { background: rgba(42,74,61,0.8) !important; border-color: rgba(242,166,59,0.5) !important; }
           .store-btn:active { transform: scale(0.97); }
         `}</style>
 
-        <div className="hero-grid" style={{ display: 'contents' }}>
+      <div
+        className="hero-grid"
+        style={{
+          maxWidth: 1100,
+          margin: '0 auto',
+          width: '100%',
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: 60,
+          alignItems: 'center',
+        }}>
           {/* Left: Copy */}
           <div>
             <div
@@ -93,7 +98,7 @@ export default function Hero() {
               <span style={{ color: '#f2a63b' }}>Play Fairer.</span>
             </h1>
 
-            <p style={{
+            <p className="hero-desc" style={{
               fontSize: 18,
               color: '#c9c0ab',
               lineHeight: 1.7,
@@ -182,7 +187,6 @@ export default function Hero() {
             <PhoneMockup />
           </div>
         </div>
-      </div>
     </section>
   )
 }

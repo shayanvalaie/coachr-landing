@@ -30,6 +30,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -61,4 +62,28 @@ img {
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  #features,
+  #how-it-works,
+  #pricing {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  #download {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .footer-inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center !important;
+  }
 }

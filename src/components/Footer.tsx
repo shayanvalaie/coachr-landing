@@ -66,7 +66,7 @@ export default function Footer() {
         padding: '40px 24px',
         borderTop: '1px solid rgba(42,74,61,0.4)',
       }}>
-        <div style={{
+        <div className="footer-inner" style={{
           maxWidth: 1100,
           margin: '0 auto',
           display: 'flex',
@@ -84,7 +84,7 @@ export default function Footer() {
             Coachr
           </div>
 
-          <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+          <div className="footer-links" style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
             {['Privacy Policy', 'Terms of Service', 'Contact'].map(link => (
               <a
                 key={link}
