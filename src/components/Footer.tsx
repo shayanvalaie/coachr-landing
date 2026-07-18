@@ -85,10 +85,14 @@ export default function Footer() {
           </div>
 
           <div className="footer-links" style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
-            {['Privacy Policy', 'Terms of Service', 'Contact'].map(link => (
+            {[
+              { label: 'Privacy Policy', href: '/privacy' },
+              { label: 'Terms of Service', href: '/terms' },
+              { label: 'Contact', href: 'mailto:support@coachrapp.io' },
+            ].map(({ label, href }) => (
               <a
-                key={link}
-                href="#"
+                key={label}
+                href={href}
                 style={{
                   color: '#c9c0ab',
                   fontSize: 13,
@@ -97,7 +101,7 @@ export default function Footer() {
                 onMouseEnter={e => (e.currentTarget.style.color = '#f6f1e7')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#c9c0ab')}
               >
-                {link}
+                {label}
               </a>
             ))}
           </div>
