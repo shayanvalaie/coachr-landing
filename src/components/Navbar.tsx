@@ -171,11 +171,13 @@ export default function Navbar({ scrolled }: NavbarProps) {
 
 function LogoIcon() {
   return (
-    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-      <rect width="30" height="30" rx="8" fill="#f2a63b" />
-      <path d="M8 22L15 8L22 22" stroke="#1c1205" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M10.5 17.5H19.5" stroke="#1c1205" strokeWidth="2.5" strokeLinecap="round" />
-      <circle cx="15" cy="8" r="2" fill="#1c1205" />
+    <svg width="30" height="30" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+      <rect width="100" height="100" rx="22" fill="#0C271C" />
+      <g transform="translate(10 10) scale(0.8)">
+        <rect x="18" y="23" width="64" height="14" rx="7" fill="#F3A73B" />
+        <rect x="18" y="44" width="50" height="14" rx="7" fill="#F4EFE2" opacity="0.9" />
+        <rect x="18" y="65" width="58" height="14" rx="7" fill="#F4EFE2" opacity="0.45" />
+      </g>
     </svg>
   )
 }

@@ -22,16 +22,16 @@ export default function Footer() {
         <div style={{ position: 'relative', maxWidth: 560, margin: '0 auto' }}>
           <div style={{
             width: 56, height: 56,
-            borderRadius: 14,
-            background: 'rgba(242,166,59,0.15)',
-            border: '1px solid rgba(242,166,59,0.3)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             margin: '0 auto 24px',
           }}>
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect width="28" height="28" rx="7" fill="#f2a63b" />
-              <path d="M7 21L14 7L21 21" stroke="#1c1205" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M9.5 16.5H18.5" stroke="#1c1205" strokeWidth="2.2" strokeLinecap="round" />
+            <svg width="56" height="56" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+              <rect width="100" height="100" rx="22" fill="#0C271C" />
+              <g transform="translate(10 10) scale(0.8)">
+                <rect x="18" y="23" width="64" height="14" rx="7" fill="#F3A73B" />
+                <rect x="18" y="44" width="50" height="14" rx="7" fill="#F4EFE2" opacity="0.9" />
+                <rect x="18" y="65" width="58" height="14" rx="7" fill="#F4EFE2" opacity="0.45" />
+              </g>
             </svg>
           </div>
           <h2 style={{
@@ -76,10 +76,13 @@ export default function Footer() {
           gap: 16,
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontWeight: 700, fontSize: 16 }}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect width="24" height="24" rx="6" fill="#f2a63b" />
-              <path d="M6 18L12 6L18 18" stroke="#1c1205" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M8 14H16" stroke="#1c1205" strokeWidth="2" strokeLinecap="round" />
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+              <rect width="100" height="100" rx="22" fill="#0C271C" />
+              <g transform="translate(10 10) scale(0.8)">
+                <rect x="18" y="23" width="64" height="14" rx="7" fill="#F3A73B" />
+                <rect x="18" y="44" width="50" height="14" rx="7" fill="#F4EFE2" opacity="0.9" />
+                <rect x="18" y="65" width="58" height="14" rx="7" fill="#F4EFE2" opacity="0.45" />
+              </g>
             </svg>
             Coachr
           </div>
