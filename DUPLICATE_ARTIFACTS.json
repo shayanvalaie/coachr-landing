@@ -1,0 +1,29 @@
+{
+  "reason": "Obsolete numbered backup artifacts; canonical imports use unnumbered files. Original artifacts remain in baseline Git snapshot and original owner checkout.",
+  "files": [
+    {
+      "removedBackup": "package 2.json",
+      "retainedCanonical": "package.json",
+      "backupSha256": "cd92e122ca21c9b77f9e9d8c39966b610a9ff8a5cfe15d624bb8b0c9a49372b7",
+      "canonicalSha256": "6d6f5bdcfaf5b2c2e7b750bbdf3425174ee11012db85c57337867db9172f7c60"
+    },
+    {
+      "removedBackup": "package-lock 2.json",
+      "retainedCanonical": "package-lock.json",
+      "backupSha256": "d5370ec16717c7bee9315984222308a14e7ae20d81d4d1515ff26530ab036299",
+      "canonicalSha256": "20ee08862e026bae53dc0ce56abd6bafa1f3380462a199f29e9574a31e9a84ed"
+    },
+    {
+      "removedBackup": "public/privacy/index 2.html",
+      "retainedCanonical": "public/privacy/index.html",
+      "backupSha256": "cdf9373ebe2a571d09718771b7faa0d7bfdd28097df0f4b1d3c9b5ba049cd068",
+      "canonicalSha256": "d8f59d58c762632b0c0b8db935fe371317a56b84d3697a8546f3b09da0fd9aa2"
+    },
+    {
+      "removedBackup": "public/terms/index 2.html",
+      "retainedCanonical": "public/terms/index.html",
+      "backupSha256": "85fd23474c9ee503db353e071ad56b76ca8c1b2d8efdb9b34463d62aca236729",
+      "canonicalSha256": "ac3b597c6d69d44f11388f9b7fb5914661bed852a124d97cbdf9bdac622c6bf6"
+    }
+  ]
+}
