@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Get help with Coachr or send us a message."
+    />
+    <title>Support — Coachr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f1f18;
+        --card: #183129;
+        --accent: #f2a63b;
+        --accent-dark: #d4882a;
+        --accent-text: #1c1205;
+        --text: #f6f1e7;
+        --subtext: #c9c0ab;
+        --border: #2a4a3d;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent-dark);
+      }
+      ::selection {
+        background: var(--accent);
+        color: var(--accent-text);
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 24px 96px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--text);
+        margin-bottom: 40px;
+      }
+      h1 {
+        font-size: clamp(30px, 5vw, 44px);
+        font-weight: 800;
+        letter-spacing: -1.2px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+      }
+      .updated {
+        color: var(--subtext);
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        margin: 40px 0 12px;
+        color: var(--text);
+      }
+      p,
+      li {
+        color: var(--subtext);
+        font-size: 15.5px;
+      }
+      p {
+        margin-bottom: 14px;
+      }
+      ul {
+        margin: 0 0 14px 22px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .intro {
+        color: var(--subtext);
+        font-size: 17px;
+      }
+      .divider {
+        height: 1px;
+        background: var(--border);
+        border: none;
+        margin: 48px 0;
+        opacity: 0.6;
+      }
+      .home-link {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .footer {
+        color: var(--subtext);
+        font-size: 13px;
+        opacity: 0.7;
+        margin-top: 8px;
+      }
+      form {
+        margin-top: 32px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 24px;
+        display: grid;
+        gap: 18px;
+      }
+      label {
+        display: grid;
+        gap: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--subtext);
+      }
+      input,
+      textarea {
+        font: inherit;
+        font-size: 15px;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 10px 12px;
+        transition: border-color 150ms ease-out, box-shadow 150ms ease-out;
+      }
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(242, 166, 59, 0.25);
+      }
+      .hint {
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.7;
+      }
+      button {
+        font: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--accent-text);
+        background: var(--accent);
+        border: none;
+        border-radius: 10px;
+        padding: 13px 20px;
+        cursor: pointer;
+        transition: background 150ms ease-out, transform 100ms ease-out;
+      }
+      button:hover {
+        background: var(--accent-dark);
+      }
+      button:active {
+        transform: scale(0.98);
+      }
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      .error {
+        color: #ef6b5b;
+        font-size: 14px;
+        margin: 0;
+      }
+      .sent {
+        margin-top: 32px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 24px;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <a class="brand" href="/">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect width="24" height="24" rx="6" fill="#f2a63b" />
+          <path d="M6 18L12 6L18 18" stroke="#1c1205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M8 14H16" stroke="#1c1205" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        Coachr
+      </a>
+      <h1>Support</h1>
+      <p class="intro">
+        Questions, bugs, or feedback — send us a message and we'll reply by email.
+        You can also write to <a href="mailto:support@coachrapp.io">support@coachrapp.io</a>.
+      </p>
+
+      <form id="contact" novalidate>
+        <label>Name
+          <input id="name" name="name" autocomplete="name" maxlength="120" required />
+        </label>
+        <label>Email
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </label>
+        <label>Message <span class="hint" id="count">0/5000</span>
+          <textarea id="message" name="message" maxlength="5000" required></textarea>
+        </label>
+        <p class="error" id="error" role="alert" hidden></p>
+        <button type="submit" id="submit">Send message</button>
+      </form>
+
+      <div class="sent" id="sent" aria-live="polite" hidden>
+        <h2 style="margin-top: 0">Message sent</h2>
+        <p id="sent-text" style="margin-bottom: 0"></p>
+      </div>
+
+      <hr class="divider" />
+      <a class="home-link" href="/">&larr; Back to Coachr</a>
+      <p class="footer">© 2026 Coachr. All rights reserved.</p>
+    </main>
+    <script>
+      (function () {
+        var API = "https://api.coachrapp.io/contact";
+        var form = document.getElementById("contact");
+        var error = document.getElementById("error");
+        var button = document.getElementById("submit");
+        var message = document.getElementById("message");
+        var count = document.getElementById("count");
+
+        message.addEventListener("input", function () {
+          count.textContent = message.value.length + "/5000";
+        });
+
+        function showError(text) {
+          error.textContent = text;
+          error.hidden = false;
+        }
+
+        function detailMessage(body, status) {
+          var detail = body && body.detail;
+          if (typeof detail === "string") return detail;
+          if (detail && typeof detail.message === "string") return detail.message;
+          if (Array.isArray(detail) && detail[0] && detail[0].loc) {
+            var field = detail[0].loc[detail[0].loc.length - 1];
+            return "Check the " + field + " field.";
+          }
+          return "We couldn't send your message (" + status + "). Please try again.";
+        }
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          var name = document.getElementById("name").value.trim();
+          var email = document.getElementById("email").value.trim().toLowerCase();
+          var text = message.value.trim();
+          if (!name) return showError("Enter your name.");
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showError("Enter a valid email address.");
+          if (!text) return showError("Enter a message.");
+          error.hidden = true;
+          button.disabled = true;
+          button.textContent = "Sending…";
+          fetch(API, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name: name, email: email, message: text }),
+          })
+            .then(function (response) {
+              return response.json().catch(function () { return null; }).then(function (body) {
+                if (!response.ok) throw new Error(detailMessage(body, response.status));
+              });
+            })
+            .then(function () {
+              form.hidden = true;
+              document.getElementById("sent-text").textContent = "Thanks — we'll reply to " + email + " as soon as we can.";
+              document.getElementById("sent").hidden = false;
+            })
+            .catch(function (err) {
+              showError(err instanceof TypeError ? "Unable to reach the server. Try again." : err.message);
+            })
+            .finally(function () {
+              button.disabled = false;
+              button.textContent = "Send message";
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>
